@@ -4,7 +4,7 @@ import math
 
 def difference(*args) -> int:
     """
-    Finds the difference beetwen max and min numbers
+    Finds the difference between max and min numbers
 
     Args:
         args: gets numbers
