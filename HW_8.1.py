@@ -6,9 +6,9 @@ def add_one(some_list: list) -> list:
     lst_str = [str(i) for i in some_list]
     
     add_numbers = int("".join(lst_str)) + 1
-    numbers_lst = list(str(add_numbers))
+    lst = list(str(add_numbers))
 
-    lst_int = [int(i) for i in numbers_lst ]
+    lst_int = [int(i) for i in lst]
     
     return lst_int
 
