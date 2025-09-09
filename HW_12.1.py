@@ -32,8 +32,9 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
 
             elif i in ">":
                   state = True
+                  continue
 
-            elif state:
+            if state:
                   lst.append(i)
 
 
@@ -47,5 +48,6 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
             file.write(without_tags)
 
    
+
 
 delete_html_tags("draft.html", "text.txt")
