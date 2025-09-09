@@ -8,7 +8,7 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
       with codecs.open(html_file, 'r', 'utf-8') as file: 
             html = file.read()
 
-      # while all(["<" in html, ">" in html]):   Цей алгоритм видаляє теги разом із їхнім вмістом, але при переписуванні в інший файл, весь текст знаходиться в одній строці
+      # while all(["<" in html, ">" in html]):   Цей алгоритм видаляє теги разом із їхнім вмістом, але при переписуванні в інший файл, але весь текст знаходиться в одній строці
                  
       #      for i in html:
                         
@@ -51,3 +51,4 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
 
 
 delete_html_tags("draft.html", "text.txt")
+
